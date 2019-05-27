@@ -1,0 +1,62 @@
+<!doctype html>
+
+<html lang="sv">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Kontakt formulär</title>
+
+
+<link href="cssdatabas.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<form action="kvitto.php" method="post" id="mat">
+      <p>
+        <label for="fnamn">Förnamn:<abbr title="This field is mandatory">*</abbr></label>
+        <input name="fnamn" type="text" required="required" id="fnamn" placeholder="John" title="fnamn">
+      </p>
+	    <p>
+        <label for="enamn">  Efternamn:<abbr title="This field is mandatory">*</abbr></label>
+        <input name="enamn" type="text" required="required" id="enamn" placeholder="Smith" title="enamn">
+      </p>
+      <p>
+        <label for="email"> E-mail:<abbr title="This field is mandatory">*</abbr></label>
+        <input name="email" type="email" required id="email" placeholder="Ange gilltig email">    
+      </p>
+	  
+ <p> <input type="checkbox" name="pizza1" value="kebab">Jag vill beställa en kebabpizza<br></p>
+  <p> Kebabpizza innehåller kebabkött, fefferoni,<br></p>
+  <p> ost, rödlök och vitlökssås<br></p>
+ <p> <input type="checkbox" name="pizza2" value="calzone">Jag vill beställa en calzone<br></p>
+ <p> Calzone är en inbakad pizza som innehåller<br></p>
+ <p>  tomat, ost och skinka<br></p>
+ <p> <input type="checkbox" name="pizza3" value="vesuvio" checked> Jag vill beställa en vesuvio<br></p>
+ <p> Vesuvio innehåller<br></p>
+ <p> tomatsås och skinka<br></p>
+	  
+	  
+
+    <p>
+    Date:<abbr title="This field is mandatory">*</abbr> <input type="date" name="date" id="date" required placeholder="Välj datum">
+    </p>
+	<p>
+
+<label for="meddelande" style=> Meddelande:<br>
+</label>
+<textarea name="meddelande" cols="40" rows="10" id="meddelande" placeholder="Skriv ditt meddelande!" title="meddelande"></textarea>
+</p>
+    <br>
+    <p>
+      <input type="submit" name="submit" id="submit" value="Skicka">
+      <br>
+    </p>
+	
+</form>
+</body>
+</html>
